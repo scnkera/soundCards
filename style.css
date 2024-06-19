@@ -8,31 +8,38 @@ body{
 
 
 #instructions{
-    text-shadow: 1px 1px rgb(101, 79, 27);
-    font-family: "Roboto", sans-serif;
-    
+    font-family: "Roboto Slab", cursive;
+    font-weight: bold;
+    font-style: italic;
     h1{
         font-size: 50px;
         font-weight: bold; 
+        text-shadow: 1px 1px rgb(101, 79, 27);
     }
     p{
-        font-size: 30px;
+        font-size: 25px;
     }
 }
 
 .col-4{
     /* border: 3px solid red; */
     height: 350px;
-    padding: 20px 5px;
+    padding: 20px 10px;
 }
 
 .soundCard{
+    /* border: 20px solid black; */
     border: 1px solid rgb(228, 206, 154);
     /* height: 95%; */
     width: 100%;
     height: 100%;
     border-radius: 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
+
+.soundCard:hover {
+    transform: scale(1.1);
+  }
 
 #cat-button {
     background-image: url("./static/cat-img.png");
