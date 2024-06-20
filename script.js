@@ -44,27 +44,27 @@ for (let card of allCards) {
         let audioFilePath;
 		if (cardId === catCardId) {
 			// console.log("cat-audio");
-            const catAudio = document.getElementById('cat-audio');
+            const catAudio = document.getElementById('cat_audio');
             catAudio.play();
 		} else if (cardId === dogCardId) {
             // console.log("dog-audio");
-            const dogAudio = document.getElementById('dog-audio');
+            const dogAudio = document.getElementById('dog_audio');
             dogAudio.play();
 		} else if (cardId === lionCardId) {
 			// console.log("lion-audio");
-            const lionAudio = document.getElementById('lion-audio');
+            const lionAudio = document.getElementById('lion_audio');
             lionAudio.play();
         } else if (cardId === lightningCardId) {
 			// console.log("lightning-audio");
-            const lightningAudio = document.getElementById('lightning-audio');
+            const lightningAudio = document.getElementById('lightning_audio');
             lightningAudio.play();
         } else if (cardId === rainCardId) {
 			// console.log("rain-audio");
-            const rainAudio = document.getElementById('rain-audio');
+            const rainAudio = document.getElementById('rain_audio');
             rainAudio.play();
         } else  if (cardId === tornadoCardId){
 			// console.log("tornado-audio");
-            const tornadoAudio = document.getElementById('tornado-audio');
+            const tornadoAudio = document.getElementById('tornado_audio');
             tornadoAudio.play();
         } else {
             console.log("error found")
