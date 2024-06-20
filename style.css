@@ -3,9 +3,7 @@ body{
    background: linear-gradient(0deg, rgba(254,254,253,1) 0%, rgba(242,232,207,1) 100%);
    height: 100vh;
    min-width: 600px;
-
 }
-
 
 #instructions{
     font-family: "Roboto Slab", cursive;
@@ -22,66 +20,47 @@ body{
 }
 
 .col-4{
-    /* border: 3px solid red; */
     height: 350px;
     padding: 20px 10px;
 }
 
 .sound-card{
-    /* border: 20px solid black; */
     border: 1px solid rgb(228, 206, 154);
-    /* height: 95%; */
     width: 100%;
     height: 100%;
     border-radius: 25px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    /* background image styling */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
 }
 
 .sound-card:hover {
     transform: scale(1.1);
-  }
+}
 
 #cat_button {
     background-image: url("./static/cat-img.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100%;
 }
+
 #dog_button {
     background-image: url("./static/dog-img.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100%;
 }
+
 #lion_button {
     background-image: url("./static/lion-img.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100%;
 }
+
 #lightning_button {
     background-image: url("./static/lightning-img.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100%;
 }
 
 #rain_button {
     background-image: url("./static/rain-img.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100%;
 }
 
 #tornado_button {
     background-image: url("./static/tornado-img.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100%;
 }
