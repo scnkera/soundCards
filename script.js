@@ -1,7 +1,7 @@
-// x step 1: get all class = soundCloud 
-// x step 2: loop through classes 
-// x step 3: add onClick to each
-// x step 4: figure out what the id
+// step 1: get all class = soundCloud 
+// step 2: loop through classes 
+// step 3: add onClick to each
+// step 4: figure out what the id
 // step 5: if the card id equals = x
 // step 6: play x's associated sound
 
@@ -11,7 +11,6 @@
 const allCards = document.getElementsByClassName('sound-card');
 
 // card types
-
 const catCardId = 'cat_button';
 const dogCardId = 'dog_button';
 const lionCardId = 'lion_button';
@@ -22,6 +21,7 @@ const tornadoCardId = 'tornado_button';
 const audioElements = document.querySelectorAll("audio");
 console.log(audioElements)
 
+// function that stops all audio
 function stopAllAudio() {
     audioElements.forEach(audio => {
         audio.pause();
@@ -30,16 +30,16 @@ function stopAllAudio() {
 }
 
 // step 2: loop through classes
-
 for (let card of allCards) {
     // step 3: add onClick to each
     card.onclick = () => {
         stopAllAudio();
+
         // step 4: figure out what the id
         const cardId = card.id;
         console.log(cardId);
-        // console.log(catCard);
-		// step 5: if the card id equals = x, play x sound
+
+		// step 5: if the card id equals = x
         // step 6: play x's associated sound
         let audioFilePath;
 		if (cardId === catCardId) {
@@ -71,4 +71,3 @@ for (let card of allCards) {
         }
 	};
 }
-
