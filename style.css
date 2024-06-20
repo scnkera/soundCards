@@ -27,7 +27,7 @@ body{
     padding: 20px 10px;
 }
 
-.soundCard{
+.sound-card{
     /* border: 20px solid black; */
     border: 1px solid rgb(228, 206, 154);
     /* height: 95%; */
@@ -37,32 +37,32 @@ body{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.soundCard:hover {
+.sound-card:hover {
     transform: scale(1.1);
   }
 
-#cat-button {
+#cat_button {
     background-image: url("./static/cat-img.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100%;
 }
-#dog-button {
+#dog_button {
     background-image: url("./static/dog-img.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100%;
 }
-#lion-button {
+#lion_button {
     background-image: url("./static/lion-img.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100%;
 }
-#lightning-button {
+#lightning_button {
     background-image: url("./static/lightning-img.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -70,7 +70,7 @@ body{
     height: 100%;
 }
 
-#rain-button {
+#rain_button {
     background-image: url("./static/rain-img.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -78,7 +78,7 @@ body{
     height: 100%;
 }
 
-#tornado-button {
+#tornado_button {
     background-image: url("./static/tornado-img.png");
     background-repeat: no-repeat;
     background-position: center;

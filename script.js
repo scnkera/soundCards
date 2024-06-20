@@ -1,80 +1,74 @@
+// x step 1: get all class = soundCloud 
+// x step 2: loop through classes 
+// x step 3: add onClick to each
+// x step 4: figure out what the id
+// step 5: if the card id equals = x
+// step 6: play x's associated sound
+
+
+
 // step 1: get all class = soundCloud
-const allCards = document.getElementsByClassName('soundCard');
+const allCards = document.getElementsByClassName('sound-card');
 
 // card types
 
-const catCard = document.getElementByiD('cat-button');
-const dogCard = document.getElementByiD('dog-button');
-const lionCard = document.getElementByiD('lion-button');
-const lightningCard = document.getElementByiD('lightning-button');
-const rainCard = document.getElementByiD('rain-button');
-const tornadoCard = document.getElementByiD('tornado-button');
+const catCardId = 'cat_button';
+const dogCardId = 'dog_button';
+const lionCardId = 'lion_button';
+const lightningCardId = 'lightning_button';
+const rainCardId = 'rain_button';
+const tornadoCardId = 'tornado_button';
 
-// const elementId = document.getElementByClassName('.exampleClass');
-// console.log(allCards[1]);
-// console.log(allCards);
+const audioElements = document.querySelectorAll("audio");
+console.log(audioElements)
 
-// step 2: loop through classes
-for (let card of allCards) {
-    // step 3: add onClick to each
-    card.addEventListener('click', () => {
-        if 
-
-
-//     }
-    // card.onclick = (imp) => {
-    //     // const imp = allCards.outterHTML
-    //     console.log('imp')
-    //     // associatedId = allCards.id;
-    //     // console.log("clicked");
-    //     // // const cardIdName = document.getAttribute('lightning-button');
-        
-    //     // const associatedId = card.id;
-    //     // console.log(associatedId);
-    }
+function stopAllAudio() {
+    audioElements.forEach(audio => {
+        audio.pause();
+        audio.currentTime = 0;
+    });
 }
 
-
-
-// document.addEventListener('click', (event) => {
-//     const card = document.getElementsByClassName('soundCard');
-//     const catButton = document.getElementById("cat-button");
-    
-//     card.onclick = ()=>{
-
-//     }
-//     // console.log('clicked');
-//     // if (element) {
-//     //     element.addEventListener('click', () => {
-//     //         console.log('clicked');
-//     //     });
-//     // } else {
-//     //     console.log('Element with the specified ID not found');
-//     // }
-// });
-
-
-
-// document.getElementsByClass((event) => {
-//     const card = document.getElementsByClassName('soundCard');
-//     const catButton = document.getElementById("cat-button");
-    
-//     card.onclick = ()=>{
-
-//     }
-//     // console.log('clicked');
-//     // if (element) {
-//     //     element.addEventListener('click', () => {
-//     //         console.log('clicked');
-//     //     });
-//     // } else {
-//     //     console.log('Element with the specified ID not found');
-//     // }
-// });
-
-// step 1: get all class = soundCloud
 // step 2: loop through classes
-// step 3: add onClick to each
-// step 4: figure out what the id
-// step 5: if the card id equals = x
-// step 6: play associated sound
+
+for (let card of allCards) {
+    // step 3: add onClick to each
+    card.onclick = () => {
+        stopAllAudio();
+        // step 4: figure out what the id
+        const cardId = card.id;
+        console.log(cardId);
+        // console.log(catCard);
+		// step 5: if the card id equals = x, play x sound
+        // step 6: play x's associated sound
+        let audioFilePath;
+		if (cardId === catCardId) {
+			// console.log("cat-audio");
+            const catAudio = document.getElementById('cat-audio');
+            catAudio.play();
+		} else if (cardId === dogCardId) {
+            // console.log("dog-audio");
+            const dogAudio = document.getElementById('dog-audio');
+            dogAudio.play();
+		} else if (cardId === lionCardId) {
+			// console.log("lion-audio");
+            const lionAudio = document.getElementById('lion-audio');
+            lionAudio.play();
+        } else if (cardId === lightningCardId) {
+			// console.log("lightning-audio");
+            const lightningAudio = document.getElementById('lightning-audio');
+            lightningAudio.play();
+        } else if (cardId === rainCardId) {
+			// console.log("rain-audio");
+            const rainAudio = document.getElementById('rain-audio');
+            rainAudio.play();
+        } else  if (cardId === tornadoCardId){
+			// console.log("tornado-audio");
+            const tornadoAudio = document.getElementById('tornado-audio');
+            tornadoAudio.play();
+        } else {
+            console.log("error found")
+        }
+	};
+}
+
